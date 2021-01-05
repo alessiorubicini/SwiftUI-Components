@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct HealthGroupBox: View {
+public struct HealthGroupBox: View {
     
     let label: String
     let icon: String
@@ -15,7 +15,7 @@ struct HealthGroupBox: View {
     let value: String
     let measure: String
     
-    var body: some View {
+    public var body: some View {
         GroupBox(label: Label(label, systemImage: icon).foregroundColor(color)) {
             HStack {
                 Text(value).fontWeight(.bold).font(.title)

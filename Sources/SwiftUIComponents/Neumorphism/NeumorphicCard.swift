@@ -7,12 +7,12 @@
 
 import SwiftUI
 
-struct NeumorphicCard: View {
+public struct NeumorphicCard: View {
     
     let width: CGFloat
     let height: CGFloat
     
-    var body: some View {
+    public var body: some View {
         RoundedRectangle(cornerRadius: 25)
             .fill(Color.offWhite)
             .frame(width: width, height: height)

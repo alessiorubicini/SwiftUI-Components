@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct NeumorphicButtonStyle: ButtonStyle {
+public struct NeumorphicButtonStyle: ButtonStyle {
     func makeBody(configuration: Self.Configuration) -> some View {
         configuration.label
             .padding(30)

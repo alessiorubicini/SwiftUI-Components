@@ -7,13 +7,13 @@
 
 import SwiftUI
 
-struct SearchBar: View {
+public struct SearchBar: View {
     
     @Binding var text: String
     let type: SearchBarType
     let placeHolder: String
     
-    var body: some View {
+    public var body: some View {
         if type == .defaultStyle {
             DefaultSearchBar(text: $text, placeHolder: placeHolder)
         } else {
@@ -28,7 +28,7 @@ struct DefaultSearchBar: View {
     let placeHolder: String
     @State private var isEditing = false
     
-    var body: some View {
+    public var body: some View {
         HStack {
             
             TextField(placeHolder, text: $text)
