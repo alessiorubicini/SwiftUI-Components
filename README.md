@@ -9,8 +9,9 @@ SwiftUIComponents is a package containing a lot of both backend and frontend use
 
 ## Frontend (SwiftUI)
 
-- AppOnBoarding
-- HealthGroupBox
+- Circle progess bar: a circular value driven progress bar
+- AppOnBoarding: horizontal scroll app on boarding
+- HealthGroupBox: beatuiful cards like the Apple's Health app ones
 - RoundedButton: classic iOS slightly rounded button
 - SearchBar: search bar available in 2 styles, default and widgetLike
 
