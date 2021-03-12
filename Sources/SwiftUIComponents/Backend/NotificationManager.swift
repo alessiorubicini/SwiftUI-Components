@@ -14,6 +14,8 @@ public class NotificationManager {
     
     private let center = UNUserNotificationCenter.current()
     
+    public init() {}
+    
     /// Schedule a notification in current notification center
     /// - Parameters:
     ///   - title: notification's title

@@ -11,6 +11,8 @@ import SwiftUI
 /// Allow to easily use haptic feedback on iOS with SwiftUI
 public class HapticGenerator {
     
+    public init() {}
+    
     ///  Use impact feedback generators to indicate that an impact has occurred. For example, you might trigger impact feedback when a user interface object collides with something or snaps into place.
     /// - Parameter style: feedback style
     public func impactFeedback(style: UIImpactFeedbackGenerator.FeedbackStyle) {
