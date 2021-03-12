@@ -22,7 +22,7 @@ public class NotificationManager {
     ///   - date: delivery date
     ///   - badge: badge number
     ///   - sound: notification's sound
-    func scheduleNotification(title: String, subtitle: String, body: String, date: Date, badge: UInt16, sound: UNNotificationSound) {
+    public func scheduleNotification(title: String, subtitle: String, body: String, date: Date, badge: UInt16, sound: UNNotificationSound) {
         
         // Ask for permission if necessary
         center.getNotificationSettings(completionHandler: { settings in
@@ -59,19 +59,19 @@ public class NotificationManager {
     }
     
     
-    func removePendingNotification(identifier: UUID) {
+    public func removePendingNotification(identifier: UUID) {
         self.center.removePendingNotificationRequests(withIdentifiers: [identifier.uuidString])
     }
     
     
-    func removeDeliveredNotification(identifier: UUID) {
+    public func removeDeliveredNotification(identifier: UUID) {
         self.center.removeDeliveredNotifications(withIdentifiers: [identifier.uuidString])
     }
     
     
     /// Check authorization of current notification center.
     /// - Returns: True if app is authorized, False if authorization is denied or not determined
-    func isAuthorized() -> Bool {
+    public func isAuthorized() -> Bool {
         
         var result: Bool = true
         
@@ -91,7 +91,7 @@ public class NotificationManager {
     
     /// Return the current notification center authorization status
     /// - Returns: authorization status as UNAuthorizationStatus type
-    func authorizationStatus() -> UNAuthorizationStatus {
+    public func authorizationStatus() -> UNAuthorizationStatus {
         var result: UNAuthorizationStatus = .notDetermined
         
         // Ask for permission if necessary

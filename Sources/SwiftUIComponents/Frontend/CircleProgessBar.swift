@@ -14,6 +14,14 @@ public struct CircleProgressBar: View {
     let width: Double
     let font: Font
     let color: Color
+    
+    public init(value: Binding<Double>, label: String, width: Double, font: Font, color: Color) {
+        self._value = value
+        self.label = label
+        self.width = width
+        self.font = font
+        self.color = color
+    }
 
     public var body: some View {
         ZStack {
