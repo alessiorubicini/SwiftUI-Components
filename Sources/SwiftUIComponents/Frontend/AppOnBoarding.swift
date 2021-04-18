@@ -16,7 +16,7 @@ struct AppOnBoarding<Content: View>: View {
         self.content = content()
     }
     
-    var body: some View {
+    public var body: some View {
         TabView(selection: $selectedPage) {
             content
         }
